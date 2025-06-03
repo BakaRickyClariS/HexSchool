@@ -1,0 +1,44 @@
+.main_body {
+  margin: 0 auto;
+  padding: 40px;
+}
+.content {
+  width: 100%;
+  height: 20%;
+  border-bottom: 2px solid blue;
+  padding-bottom: 40px;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowflexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.fd-row {
+  flex-direction: row;
+}
+.ai-fs {
+  align-items: flex-start;
+}
+.jc-fs {
+  justify-content: flex-start;
+}
+.headshot {
+  width: 120px;
+  border-radius: 50%;
+}
+.logoimg {
+  width: 70px;
+  border-radius: 5%;
+}
+.reelimg {
+  width: 70px;
+}
