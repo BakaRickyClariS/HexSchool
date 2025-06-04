@@ -2,19 +2,18 @@ $phone-media: 800px;
 $font-b-color: #2e406f;
 $font-color: #333;
 $font-g-color: rgb(85, 85, 85);
-
+* {
+  box-sizing: border-box;
+}
 %content-block {
   width: 100%;
-  // height: 20%;
   border-bottom: 2px solid #ffd9f9;
   padding-bottom: 40px;
-  box-sizing: border-box;
   color: $font-color;
 
   h1,
   a {
     color: $font-b-color;
-    // font-weight: normal;
     position: relative;
     cursor: pointer;
   }
@@ -62,6 +61,7 @@ $font-g-color: rgb(85, 85, 85);
 }
 body {
   margin: 0 auto;
+  padding: 0;
   @include basic-flexbox(column, center, center);
   font-family: "Archivo", "Noto Sans TC", "Noto Sans SC", "Noto Sans HK",
     "Noto Sans JP", "Noto Sans", "PingFang TC", "Microsoft JhengHei", "PMingLiU",
@@ -70,9 +70,10 @@ body {
 .block {
   padding-left: 40px;
   padding-right: 40px;
+  max-width: 1024px;
+  width: 100%;
 }
 .blue-block {
-  // margin: 0 auto;
   padding-left: 0;
   padding-right: 0;
   background-color: $font-b-color;
@@ -80,6 +81,7 @@ body {
 }
 .main-block {
   @include basic-flexbox(column, center, center);
+  width: 100%;
 }
 .header-block {
   @include basic-flexbox(row, flex-start, center);
@@ -96,7 +98,11 @@ body {
     padding-right: 30px;
     padding-top: 30px;
     img {
-      @include basic-img(300px, 50%);
+      @include basic-img(500px, 50%);
+      @include phone {
+        margin-top: 50px;
+        max-width: 300px;
+      }
     }
     @include phone {
       padding-right: 0;
@@ -175,7 +181,7 @@ body {
     }
   }
   .gra-pj-block {
-    @include basic-flexbox(row, flex-start, center);
+    @include basic-flexbox(row, center, center);
     @include phone {
       flex-direction: column;
       align-items: center;
@@ -184,7 +190,8 @@ body {
       padding-left: 10px;
       @include phone {
         aspect-ratio: 16/9;
-        width: 100%;
+        // width: 100%;
+        height: 300px;
         padding-left: 0;
       }
     }
@@ -224,9 +231,9 @@ body {
           padding-right: 0;
         }
         img {
-          @include basic-img(200px, 0%);
+          @include basic-img(500px, 0%);
           @include phone {
-            max-width: 500px;
+            max-height: 300px;
           }
         }
       }
@@ -264,6 +271,7 @@ body {
         max-height: 150px;
         height: 100%;
         @include phone {
+          height: 100vh;
           max-height: 300px;
         }
       }
@@ -275,10 +283,10 @@ body {
 }
 
 .skill-block {
-  width: 100vw;
-  padding: 0 40px 20px 40px;
-  box-sizing: border-box;
+  padding: 0 40px 80px 40px;
+  max-width: 1024px;
   width: 100%;
+  margin: 0 auto;
   @include phone {
     h1,
     h2 {
@@ -288,10 +296,11 @@ body {
       padding-left: 45%;
     }
   }
-  h1 {
+  h1,
+  h2,
+  li {
     color: white;
   }
-
   .skill-content-block {
     display: flex;
     flex-wrap: wrap;
@@ -310,14 +319,10 @@ body {
       h2 {
         padding-bottom: 10px;
         border-bottom: 2px solid;
-        color: white;
       }
       ul {
         margin-top: 0;
         margin-bottom: 0;
-      }
-      li {
-        color: white;
       }
     }
   }
