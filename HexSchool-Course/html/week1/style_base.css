@@ -1,0 +1,30 @@
+h1 {
+  color: blue;
+  font-size: 150px;
+  border: 5px solid blue;
+}
+h1:hover {
+  color: darkmagenta;
+  font-size: 300;
+}
+a {
+  color: brown;
+}
+a:hover {
+  color: blue;
+  font-size: 20;
+}
+a:active {
+  color: cadetblue;
+}
+.style1 {
+  color: rebeccapurple;
+}
+.text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: left;
+  text-indent: 32px;
+  text-decoration: line-through;
+}

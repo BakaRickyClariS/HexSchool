@@ -1,0 +1,29 @@
+.header {
+  h1 {
+    color: $bg-color;
+  }
+  a {
+    display: block;
+    img {
+      max-width: $font-size;
+    }
+  }
+  p {
+    font-size: $font-size;
+  }
+}
+
+@mixin blueSize {
+  color: blue;
+  font-size: 13px;
+}
+
+.header h1 {
+  @include blueSize;
+  background-color: black;
+}
+
+.footer p {
+  @include blueSize;
+  display: block;
+}

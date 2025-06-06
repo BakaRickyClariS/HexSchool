@@ -1,0 +1,29 @@
+@mixin blueSize {
+  color: blue;
+  font-size: 13px;
+}
+
+@mixin color($color, $size) {
+  color: $color;
+  border: 1px solid $color;
+  width: $size;
+}
+
+.context {
+  @include color(green, 80px);
+}
+
+@mixin pad {
+  @media (max-width: 568px) {
+    font-size: 24px;
+    @content;
+  }
+}
+
+.item {
+  width: 500px;
+  @include pad {
+    width: 300px;
+    color: red;
+  }
+}

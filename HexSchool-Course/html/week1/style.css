@@ -1,0 +1,68 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+h1 {
+  border-bottom: 5px solid black;
+}
+div {
+}
+h2 {
+  font-size: 20px;
+  border-bottom: 3px solid black;
+}
+.red_title {
+  color: red;
+  font-size: 15px;
+}
+.block3 {
+  background-color: darkslategray;
+  padding: 15px;
+}
+.block3 h2 {
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 500px;
+  border-bottom: 3px solid white;
+}
+.block3 .red_title {
+  color: white;
+}
+.skill {
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 3px solid white;
+  width: 130px;
+  padding-left: 15px;
+}
+.skill p {
+  color: white;
+  text-align: left;
+  padding: 5px;
+  font-size: 15px;
+}
+.blue_block {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.workexp {
+  margin-left: auto;
+  margin-right: auto;
+  width: 720px;
+  border-left: 2px solid black;
+  padding-left: 30px;
+}
+.block3 .contact {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  width: 250px;
+  text-align: center;
+  font-size: 15px;
+}
+.block3 .contact img {
+  padding: 10px;
+}

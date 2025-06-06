@@ -1,0 +1,353 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrap {
+  margin: 40px auto;
+  width: 980px;
+  /* background-color: red; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.header img {
+  width: 250px;
+  height: 40px;
+}
+.header .header-item {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 80px;
+}
+.header .header-item-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header-item-btn a {
+  width: 100px;
+  display: block;
+  text-decoration: none;
+  color: green;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.header .header-item-btn a:hover {
+  color: white;
+  background-color: green;
+}
+.header .header-item-btn img {
+  width: 24px;
+  height: 24px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.content .content-item2 {
+  width: 980px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+.content-item2 .content-item-block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.content-item-block1 a,
+.content-item-block1 h2 {
+  display: block;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  color: green;
+  border: 1px solid rgb(218, 218, 218);
+  font-size: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.content-item-block1 h2 {
+  color: white;
+  background-color: green;
+}
+.content-item-block1 a:hover {
+  color: green;
+  border: 1px solid rgb(218, 218, 218);
+  background-color: rgb(218, 218, 218);
+}
+.content-item-block1 a:active {
+  color: white;
+  border: 1px solid rgb(73, 123, 73);
+  background-color: rgb(73, 123, 73);
+}
+.content-item2 .content-item-block2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content-item-block2 .shop-item {
+  width: 300px;
+  margin: 10px;
+}
+.shop-item .item-name {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.item-name h2 {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  width: 150px;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid rgb(218, 218, 218);
+  color: green;
+}
+.daily {
+  writing-mode: vertical-rl;
+  position: absolute;
+  left: 20px;
+  /* bottom: 320px; */
+  top: 0px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+.item-content {
+  height: 315px;
+  position: relative;
+}
+/* 
+要用position固定元素在區塊內跟隨的話
+一定要先在父元素產生position: relative;
+在到子元素產生position: absolute;讓他parent上去
+這時如果用top: 0px;子元素便會直接吸附到父元素的頂端
+*/
+.item-content a {
+  position: absolute;
+  left: 260px;
+  top: 20px;
+}
+.item-content a:hover {
+  filter: sepia() saturate(4) hue-rotate(295deg);
+}
+.item-add a {
+  display: block;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  color: green;
+  background-color: rgb(218, 218, 218);
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.item-add a:hover {
+  color: white;
+  background-color: green;
+}
+.content-item3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.content-item3 a {
+  display: block;
+  width: 40px;
+  height: 30px;
+  padding-top: 10px;
+  border: 1px solid black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: green;
+}
+.content-item3 img:hover {
+  filter: sepia() saturate(4) hue-rotate(295deg);
+}
+.content-item3 a:hover {
+  background-color: gray;
+  color: white;
+}
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: green;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.footer-sub {
+  display: flex;
+  align-items: center;
+}
+.footer-sub img {
+  height: 50px;
+  width: 50px;
+  padding: 20px;
+}
+.footer-sub h2 {
+  color: white;
+  font-size: 36px;
+}
+.footer-mail {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+.footer-mail a {
+  padding: 15px;
+}
+.footer-mail a:hover {
+  background-color: gray;
+}
+.footer-mail .yellow-btn {
+  background-color: yellow;
+}

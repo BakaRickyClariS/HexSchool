@@ -1,0 +1,10 @@
+.style1 a {
+  color: red;
+}
+.style1 h2 {
+  color: palevioletred;
+}
+.style1 .content {
+  font-weight: bold;
+  color: brown;
+}
